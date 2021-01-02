@@ -7,8 +7,6 @@ output:
 ```{r, include=FALSE}
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ```
-<br>
-
 
 __Look at how cool this plot is!__
 
@@ -36,4 +34,5 @@ ggplot(results, aes(x = xs, y = ys, color = alpha)) +
 ```
 
 # Render and run the site
+rmarkdown::render_site()
 
