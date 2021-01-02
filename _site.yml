@@ -1,0 +1,33 @@
+name: "my-website"
+navbar:
+  title: "My Teaching Website"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "STA107"
+      href: STA107.html
+    - text: "STA130"
+      href: STA130.html
+    - text: "CSC108"
+      href: python.ipynb
+      menu:
+        - text: Classes
+          href: class_docs.html
+        - text: "-----------------"
+        - text: Laboratories
+          href: tut_docs.html
+        - text: Laboratories Grading
+          href: tut_grading.html
+        - text: "-----------------"
+        - text: Assignments
+          href: assign_docs.html
+        - text: Assignment Grading
+          href: assignment_rubrics.html
+    - text: Discussion Forum
+      href: XXXXXTO-UPDATEXXX
+    - text: Resources
+      href: resources.html
+output:
+  html_document:
+    lib_dir: site_libs
+    self_contained: no

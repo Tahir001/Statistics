@@ -1,0 +1,7 @@
+---
+title: "STA130"
+output: 
+  html_document:
+   theme: flatly
+---
+Why I am awesome. 
