@@ -29,5 +29,8 @@ navbar:
       href: resources.html
 output:
   html_document:
-    lib_dir: site_libs
-    self_contained: no
+    theme: cosmo
+    highlight: textmate
+    include:
+      after_body: footer.html
+    css: styles.css

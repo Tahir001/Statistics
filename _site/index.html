@@ -11,7 +11,7 @@
 
 
 
-<title>STA130</title>
+<title>UofT Statistics</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,8 +20,10 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -78,6 +80,7 @@ h6 {
 </style>
 
 
+<link rel="stylesheet" href="styles.css" type="text/css" />
 
 
 
@@ -334,13 +337,28 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">STA130</h1>
+<h1 class="title toc-ignore">UofT Statistics</h1>
 
 </div>
 
 
-<p>Why I am awesome.</p>
+<p><strong>Look at how cool this plot is!</strong></p>
+<p><span class="math display">\[Y = \alpha \cdot \sin(X), \alpha = 0,0.1,0.2,...,3\]</span></p>
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<div id="render-and-run-the-site" class="section level1">
+<h1>Render and run the site</h1>
+<p>rmarkdown::render_site()</p>
+</div>
+<div id="list-which-files-will-be-removed" class="section level1">
+<h1>list which files will be removed</h1>
+<p>rmarkdown::clean_site(preview = TRUE)</p>
+</div>
+<div id="actually-remove-the-files" class="section level1">
+<h1>actually remove the files</h1>
+<p>rmarkdown::clean_site()</p>
+</div>
 
+<p>Copyright &copy; 2021 , Inc. All rights reserved.</p>
 
 
 

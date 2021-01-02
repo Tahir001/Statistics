@@ -4,7 +4,8 @@ output:
   html_document:
    theme: flatly
 ---
-```{r, include=FALSE}
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache = TRUE)
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ```
 
@@ -35,4 +36,10 @@ ggplot(results, aes(x = xs, y = ys, color = alpha)) +
 
 # Render and run the site
 rmarkdown::render_site()
+
+# list which files will be removed
+rmarkdown::clean_site(preview = TRUE)
+
+# actually remove the files
+rmarkdown::clean_site()
 
