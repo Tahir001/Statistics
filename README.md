@@ -1,1 +1,1 @@
-# Teaching Website :) 
+# Statistics Teaching Website
