@@ -24,6 +24,8 @@ navbar:
           href: assign_docs.html
         - text: Assignment Grading
           href: assignment_rubrics.html
+    - text: Machine Learning
+      href: Machine Learning.Rmd
     - text: Discussion Forum
       href: XXXXXTO-UPDATEXXX
     - text: Resources

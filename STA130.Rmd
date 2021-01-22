@@ -1,7 +1,344 @@
 ---
-title: "STA130"
+title: "STA130 Course Content"
+date: 'Winter 2018'
 output: 
   html_document:
+   toc: true
+   toc_depth: 2
+   toc_float: true 
    theme: flatly
 ---
-Why I am awesome. 
+
+This page contains course material such as class slides, practice problems, and tutorial assignments.
+
+
+# Week 0
+
+## January 5 Tutorial
+
+There are no tutorials on January 5.  Instead of attending tutorial we suggest that you spend some time getting acquainted with the basics of [R](https://www.r-project.org).  We will be using R throughout the course.
+
+The first classes are on January 8.  Before you come to class do the following:
+
+0. Read through the [course syllabus](STA130syllabus2018S.html)
+
+1. Read the [R resources section](R_resources.html) of the course webpage.  Make sure to login to http://rstudio.chass.utoronto.ca/ (see [R resources section](R_resources.html) for more details).
+
+2. Sign up for the [Piazza discussion forum](https://piazza.com/utoronto.ca/winter2018/sta130h1/home).
+
+3. Get introduced to R.  Two ways to get you started are:
+
+(i) Complete [Datacamp's](https://www.datacamp.com) free online [Introduction to R](https://www.datacamp.com/courses/free-introduction-to-r)
+
+(ii)  Read chapters 1, 2, and 3 of [Hands-On Programming with R, by Garrett Grolemund](https://d1b10bmlvqabco.cloudfront.net/attach/ighbo26t3ua52t/igp9099yy4v10/igz7vp4w5su9/OReilly_HandsOn_Programming_with_R_2014.pdf).  
+
+You can do both (i) and (ii), but a lot of the same content is covered. If you decide to only complete the readings then make sure to type the commands into the console window in RStudio.    
+
+# Week 1
+
+## January 8 Class
+
+[Class slides - Prof. Taback](week1/STA130H1_Class1_NT.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i> 
+
+[Introduction to R script](https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week1/introduction_to_R.R) <i class="fa fa-code" aria-hidden="true"></i>
+
+[R Markdown source of slides](https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week1/lect1_sta130_nt.Rmd) <i class="fa fa-github" aria-hidden="true"></i>
+
+[Class slides - Prof. Gibbs](week1/introtoggplot.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i> 
+
+[R Markdown source of slides](https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week1/introtogglot.Rmd) <i class="fa fa-github" aria-hidden="true"></i>
+ 
+[Happiness Datasets](https://github.com/ntaback/UofT_STA130/tree/master/week1) <i class="fa fa-table" aria-hidden="true"></i>
+
+<i class="fa fa-book" aria-hidden="true"></i> Modern Data Science with R: Section 2.1 and chapter 3 up to and including section 3.2.2.
+
+## January 12 Tutorial
+
+[Practice problems](week1/Week1PracticeProblems-student.html) <i class="fa fa-html5" aria-hidden="true"></i>
+
+[Example solutions to practice problems](week1/Week1PracticeProblems-solutions.html) <i class="fa fa-html5" aria-hidden="true"></i>
+<br>Note: in question 1, the textbook asks for scatterplots of each person's height against their father's height.  The  x- and y-axes in the plots in the solutions should be switched.
+
+# Week 2
+
+## January 15 Class
+
+### Slides and References
+
+[Class slides](week2/STA130_Class 2_NT.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Class slides](week2/lect2_sta130_nt-ver1.html) <i class="fa fa-html5" aria-hidden="true"></i>
+
+[R Markdown source of slides](https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week2/lect2_sta130_nt-ver1.Rmd)
+<i class="fa fa-github" aria-hidden="true"></i></a>
+
+[Annotated slides - 10:00 class](week2/STA130_Class 2_NT_10.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Annotated slides - 14:00 class](week2/STA130_Class 2_2pm.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Trump's Tweets](https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week2/trumptweets.csv) <i class="fa fa-table" aria-hidden="true"></i>
+
+#### Articles of Interest
+
+[For Big-Data Scientists, ‘Janitor Work’ Is Key Hurdle to Insights - NYT](https://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html) <i class="fa fa-external-link" aria-hidden="true"></i>
+
+[The Economic Guide To Picking A College Major - FiveThirtyEight](https://fivethirtyeight.com/features/the-economic-guide-to-picking-a-college-major/) <i class="fa fa-external-link" aria-hidden="true"></i>
+
+[dplyr cheat sheet #1](data-transformation.pdf), [dplyr cheat sheet #2](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
+
+<i class="fa fa-book" aria-hidden="true"></i> Modern Data Science with R: 4.1, 4.2, 4.3, 4.4, 5.1
+
+## January 19 Tutorial
+
+[Practice problems](week2/Week2PracticeProblems-student.html) <i class="fa fa-html5" aria-hidden="true"></i>
+
+[Example solutions to practice problems](week2/Week2PracticeProblems-NT.html) <i class="fa fa-html5" aria-hidden="true"></i>
+
+# Week 3
+
+## January 22 Class
+
+### Slides and References
+
+[Class slides](week3/STA130_class3_nt.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Class slides](week3/lect4_sta130_nt.html) <i class="fa fa-html5" aria-hidden="true"></i>
+
+[R Markdown source of slides](https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week3/lect4_sta130_nt.Rmd) <i class="fa fa-github" aria-hidden="true"></i></a>
+
+
+[Annotated slides - 10:00 class](week3/STA130_class3_10.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Annotated slides - 14:00 class](week3/STA130_class3_nt_2pm.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+<i class="fa fa-book" aria-hidden="true"></i> 
+1. [Hands on Programming With R. G. Grolemund - Chapters 1-5](https://d1b10bmlvqabco.cloudfront.net/attach/ighbo26t3ua52t/igp9099yy4v10/igz7vp4w5su9/OReilly_HandsOn_Programming_with_R_2014.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+<i class="fa fa-book" aria-hidden="true"></i> 
+2. [R for Data Science. G. Grolemund and H. Wickham. Chapter 5](http://r4ds.had.co.nz/transform.html) <i class="fa fa-external-link" aria-hidden="true"></i>
+
+
+## January 26 Tutorial
+
+[Practice Problems](week3/Week3PracticeProblems-student.html) <i class="fa fa-html5" aria-hidden="true"></i>
+
+[Example solutions to practice problems](week3/Week3PracticeProblems-NT.html) <i class="fa fa-html5" aria-hidden="true"></i>
+
+# Week 4
+
+## January 29 Class
+
+### Slides and References
+
+[Announcements](week4/STA130announcement_January29.pdf)
+
+[Class slides](week4/Week4_Testing1.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Class slides](week4/Week4_Testing1.html) <i class="fa fa-html5" aria-hidden="true"></i> 
+
+[R Markdown source of slides](https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week4/Week4_Testing1.Rmd) <i class="fa fa-github" aria-hidden="true"></i></a>
+
+[Annotated slides - 10:00 class](week4/STA130_Week4_Testing1_am.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Annotated slides - 14:00 class](week4/STA130_Week4_Testing1_pm.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+<i class="fa fa-book" aria-hidden="true"></i> [Introductory Statistics with
+Randomization and Simulation - Sections 2.3.1, 2.3.2, 2.3.7 and 2.4 ](https://www.openintro.org/stat/textbook.php?stat_book=isrs) <i class="fa fa-external-link" aria-hidden="true"></i> 
+
+## February 2 Tutorial
+
+[Practice Problems](week4/Week4PracticeProblems-student.html) <i class="fa fa-html5" aria-hidden="true"></i>
+
+[Example solutions to practice problems](week4/Week4PracticeProblems-solutions.html) <i class="fa fa-html5" aria-hidden="true"></i>
+<br>Typo in solution to Question 2 corrected on March 1.  It used to say the test statistic is 0.38 in one spot, but the test statistic is 0.17, as used elsewhere else in the solution.  
+
+# Week 5
+
+## February 5 Class
+
+### Slides and References
+
+**Note:** A new version of the unannotated slides was posted February 8 (both html and pdf).  This version corrects a few typos noted in class plus a typo on pages 58 and 59 (in the mathematical note that you're not responsible for).
+
+[Class slides](week5/Week5_Testing2.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Class slides](week5/Week5_Testing2.html) <i class="fa fa-html5" aria-hidden="true"></i> 
+
+[R Markdown source of slides](https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week5/Week5_Testing2.Rmd) <i class="fa fa-github" aria-hidden="true"></i></a>
+
+[Annotated slides - 10:00 class](week5/Week5_Testing2_am.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Annotated slides - 14:00 class](week5/Week5_Testing2_pm.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+<i class="fa fa-book" aria-hidden="true"></i> [Introductory Statistics with
+Randomization and Simulation - Sections 2.1, 2.2, 2.3 (excluding 2.3.4)](https://www.openintro.org/stat/textbook.php?stat_book=isrs) <i class="fa fa-external-link" aria-hidden="true"></i> 
+
+## February 9 Tutorial
+
+[Practice Problems](week5/Week5PracticeProblems-student.html) <i class="fa fa-html5" aria-hidden="true"></i>
+
+[Example solutions to practice problems](week5/Week5PracticeProblems-solutions.html) <i class="fa fa-html5" aria-hidden="true"></i>
+
+# Week 6
+
+## February 12 Class
+
+### Slides and References
+
+[Class slides](week6/Week6_CIs.pdf) (Watch for the typo on slide 46!) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Class slides](week6/Week6_CIs.html) (Watch for the typo on slide 46!) <i class="fa fa-html5" aria-hidden="true"></i> 
+
+[R Markdown source of slides](https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week6/Week6_CIs.Rmd) <i class="fa fa-github" aria-hidden="true"></i></a>
+
+[Announcement about Mental Health Project](week6/Mental_Health_Project_Recruitment.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Annotated slides - 10:00 class](week6/Week6_CIs_am_annotated.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Annotated slides - 14:00 class](week6/Week6_CIs_pm_annotated.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+<i class="fa fa-book" aria-hidden="true"></i> Modern Data Science with R: 7.1, 7.2, 7.3
+
+## February 16 Tutorial
+
+[Practice Problems](week6/Week6PracticeProblems-student.html) <i class="fa fa-html5" aria-hidden="true"></i>
+
+[Example solutions to practice problems](week6/Week6PracticeProblems-solutions.html) <i class="fa fa-html5" aria-hidden="true"></i>
+
+
+# Week 7
+
+## February 26 Class
+
+### Slides 
+
+[Announcement: Statistical Sciences Career Panel, Saturday March 3](week7/SSU_Career_Panel_2018.png)
+
+[Class slides](week7/test_review.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Class slides](week7/sta130_test_review.html) <i class="fa fa-html5" aria-hidden="true"></i> 
+
+[R Markdown source of slides](https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week7/sta130_test_review.Rmd) <i class="fa fa-github" aria-hidden="true"></i></a>
+
+[Annotated slides - 10:00 class](week7/test_review_annotated_am.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Annotated slides - 14:00 class](week7/test_review_annotated_pm.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Example solutions to test review](week7/sta130_test_review_solutions.html) <i class="fa fa-html5" aria-hidden="true"></i>
+
+
+# Week 8
+
+## March 8 Class
+
+### Slides and References
+
+[Class slides](week8/Class8_ClassificationTrees1.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Class slides](week8/Class8_sta130_nt_ver1.html) <i class="fa fa-html5" aria-hidden="true"></i> 
+
+[R Markdown source of slides](https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week8/Class8_sta130_nt_ver1.Rmd) <i class="fa fa-github" aria-hidden="true"></i></a>
+
+[Annotated slides - 10:00 class](week8/Week8_ClassificationTrees_10.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Annotated slides - 14:00 class](week8/Class8_ClassificationTrees1_2.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+<i class="fa fa-book" aria-hidden="true"></i> Modern Data Science with R: 8.1, 8.2, 8.4
+
+## March 9 Tutorial
+
+[Practice Problems](week8/Week8PracticeProblems-student1.html)
+
+[Example solutions to practice problems](week8/Week8PracticeProblems-solutions1.html) <i class="fa fa-html5" aria-hidden="true"></i>
+
+# Week 9
+
+## March 12 Class
+
+### Slides and References
+
+[Class slides](week9/sta130_lecture9.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Class slides](week9/sta130_lecture9.html) <i class="fa fa-html5" aria-hidden="true"></i> 
+
+[Annotated slides - 10:00 class](week9/sta130_lecture9_10.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Annotated slides - 14:00 class](week9/sta130_lecture9_2.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+
+[R Markdown source of slides](https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week9/sta130_lecture9.Rmd) <i class="fa fa-github" aria-hidden="true"></i></a>
+
+<i class="fa fa-book" aria-hidden="true"></i> Modern Data Science with R: page 189, page 465 - 468, page 470.
+
+Geotab Data Scientist Brenda Nguyen's [presentation](https://www.youtube.com/embed/zWKm22p201U) on Hazardous Driving Data
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zWKm22p201U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+## March 16 Tutorial
+
+[Practice Problems](week9/Week9PracticeProblems-student.html)
+
+[Example solutions to practice problems](week9/Week9PracticeProblems-solutions.html) <i class="fa fa-html5" aria-hidden="true"></i>
+
+
+# Week 10
+
+## March 19 Class
+
+### Slides and References
+
+[Class slides](week10/Week10_Regression2.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Class slides](week10/Week10_Regression2.html) <i class="fa fa-html5" aria-hidden="true"></i> 
+
+[Annotated slides - 10:00 class](week10/Week10_Regression2_am_annotated.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Annotated slides - 14:00 class](week10/Week10_Regression2_pm_annotated.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[R Markdown source of slides](https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week10/Week10_Regression2.Rmd) <i class="fa fa-github" aria-hidden="true"></i></a>
+
+<i class="fa fa-book" aria-hidden="true"></i>Section 7.6 of *Modern Data Science with R*  
+Section 1.4.1 of [*Introductory Statistics with Randomization and Simulation* from OpenIntro](https://www.openintro.org/stat/textbook.php?stat_book=isrs)
+
+## March 23 Tutorial
+
+[Practice Problems](week10/Week10PracticeProblems-student.html)
+
+[Example solutions to practice problems](week10/Week10PracticeProblems-solutions.html) <i class="fa fa-html5" aria-hidden="true"></i>
+
+# Week 11
+
+## March 26 Class
+
+[Annotated slides - 10:00 class](week11/sta130_lecture11_beam_10.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Annotated slides - 14:00 class](week11/sta130_lecture11_beam_2.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Class slides](week11/sta130_lecture11_beam.pdf) <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+
+[Class slides](week11/sta130_lecture11.html) <i class="fa fa-html5" aria-hidden="true"></i> 
+
+<i class="fa fa-book" aria-hidden="true"></i> Modern Data Science with R: Chapter 6.
+
+### Slides and References
+
+## April 30 - No Tutorial ( University Closed on Good Friday)
+
+[Practice Problems](week11/Week11PracticeProblems-student.html)
+
+[Example solutions to practice problems](week11/Week11PracticeProblems-solutions.html) <i class="fa fa-html5" aria-hidden="true"></i>
+
+# Week 12
+
+## April 2 STA130 Poster Fair 
+
+[Project Information](project_info.html)
+
+# Tutorial Content
+
+Documents created by TAs for tutorials can be found [here](https://drive.google.com/open?id=1ip3MLIWDOe-pKs2Qs4FBzhbSoNcbhRiY).
+
+[R Markdown source](https://raw.githubusercontent.com/ntaback/UofT_STA130/master/course_content.Rmd) <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+
+

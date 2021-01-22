@@ -11,7 +11,7 @@
 
 
 
-<title>STA130</title>
+<title>STA130 Course Content</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -259,6 +262,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -266,6 +332,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -318,6 +394,9 @@ $(document).ready(function () {
   </ul>
 </li>
 <li>
+  <a href="Machine Learning.Rmd">Machine Learning</a>
+</li>
+<li>
   <a href="XXXXXTO-UPDATEXXX">Discussion Forum</a>
 </li>
 <li>
@@ -335,16 +414,278 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">STA130</h1>
+<h1 class="title toc-ignore">STA130 Course Content</h1>
+<h4 class="date">Winter 2018</h4>
 
 </div>
 
 
-<p>Why I am awesome.</p>
+<p>This page contains course material such as class slides, practice problems, and tutorial assignments.</p>
+<div id="week-0" class="section level1">
+<h1>Week 0</h1>
+<div id="january-5-tutorial" class="section level2">
+<h2>January 5 Tutorial</h2>
+<p>There are no tutorials on January 5. Instead of attending tutorial we suggest that you spend some time getting acquainted with the basics of <a href="https://www.r-project.org">R</a>. We will be using R throughout the course.</p>
+<p>The first classes are on January 8. Before you come to class do the following:</p>
+<ol start="0" style="list-style-type: decimal">
+<li><p>Read through the <a href="STA130syllabus2018S.html">course syllabus</a></p></li>
+<li><p>Read the <a href="R_resources.html">R resources section</a> of the course webpage. Make sure to login to <a href="http://rstudio.chass.utoronto.ca/" class="uri">http://rstudio.chass.utoronto.ca/</a> (see <a href="R_resources.html">R resources section</a> for more details).</p></li>
+<li><p>Sign up for the <a href="https://piazza.com/utoronto.ca/winter2018/sta130h1/home">Piazza discussion forum</a>.</p></li>
+<li><p>Get introduced to R. Two ways to get you started are:</p></li>
+</ol>
+<ol style="list-style-type: lower-roman">
+<li><p>Complete <a href="https://www.datacamp.com">Datacamp’s</a> free online <a href="https://www.datacamp.com/courses/free-introduction-to-r">Introduction to R</a></p></li>
+<li><p>Read chapters 1, 2, and 3 of <a href="https://d1b10bmlvqabco.cloudfront.net/attach/ighbo26t3ua52t/igp9099yy4v10/igz7vp4w5su9/OReilly_HandsOn_Programming_with_R_2014.pdf">Hands-On Programming with R, by Garrett Grolemund</a>.</p></li>
+</ol>
+<p>You can do both (i) and (ii), but a lot of the same content is covered. If you decide to only complete the readings then make sure to type the commands into the console window in RStudio.</p>
+</div>
+</div>
+<div id="week-1" class="section level1">
+<h1>Week 1</h1>
+<div id="january-8-class" class="section level2">
+<h2>January 8 Class</h2>
+<p><a href="week1/STA130H1_Class1_NT.pdf">Class slides - Prof. Taback</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week1/introduction_to_R.R">Introduction to R script</a> <i class="fa fa-code" aria-hidden="true"></i></p>
+<p><a href="https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week1/lect1_sta130_nt.Rmd">R Markdown source of slides</a> <i class="fa fa-github" aria-hidden="true"></i></p>
+<p><a href="week1/introtoggplot.pdf">Class slides - Prof. Gibbs</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week1/introtogglot.Rmd">R Markdown source of slides</a> <i class="fa fa-github" aria-hidden="true"></i></p>
+<p><a href="https://github.com/ntaback/UofT_STA130/tree/master/week1">Happiness Datasets</a> <i class="fa fa-table" aria-hidden="true"></i></p>
+<p><i class="fa fa-book" aria-hidden="true"></i> Modern Data Science with R: Section 2.1 and chapter 3 up to and including section 3.2.2.</p>
+</div>
+<div id="january-12-tutorial" class="section level2">
+<h2>January 12 Tutorial</h2>
+<p><a href="week1/Week1PracticeProblems-student.html">Practice problems</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+<p><a href="week1/Week1PracticeProblems-solutions.html">Example solutions to practice problems</a> <i class="fa fa-html5" aria-hidden="true"></i> <br>Note: in question 1, the textbook asks for scatterplots of each person’s height against their father’s height. The x- and y-axes in the plots in the solutions should be switched.</p>
+</div>
+</div>
+<div id="week-2" class="section level1">
+<h1>Week 2</h1>
+<div id="january-15-class" class="section level2">
+<h2>January 15 Class</h2>
+<div id="slides-and-references" class="section level3">
+<h3>Slides and References</h3>
+<p><a href="week2/STA130_Class%202_NT.pdf">Class slides</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week2/lect2_sta130_nt-ver1.html">Class slides</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+<p><a href="https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week2/lect2_sta130_nt-ver1.Rmd">R Markdown source of slides</a> <i class="fa fa-github" aria-hidden="true"></i></a></p>
+<p><a href="week2/STA130_Class%202_NT_10.pdf">Annotated slides - 10:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week2/STA130_Class%202_2pm.pdf">Annotated slides - 14:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week2/trumptweets.csv">Trump’s Tweets</a> <i class="fa fa-table" aria-hidden="true"></i></p>
+<div id="articles-of-interest" class="section level4">
+<h4>Articles of Interest</h4>
+<p><a href="https://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html">For Big-Data Scientists, ‘Janitor Work’ Is Key Hurdle to Insights - NYT</a> <i class="fa fa-external-link" aria-hidden="true"></i></p>
+<p><a href="https://fivethirtyeight.com/features/the-economic-guide-to-picking-a-college-major/">The Economic Guide To Picking A College Major - FiveThirtyEight</a> <i class="fa fa-external-link" aria-hidden="true"></i></p>
+<p><a href="data-transformation.pdf">dplyr cheat sheet #1</a>, <a href="https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">dplyr cheat sheet #2</a></p>
+<p><i class="fa fa-book" aria-hidden="true"></i> Modern Data Science with R: 4.1, 4.2, 4.3, 4.4, 5.1</p>
+</div>
+</div>
+</div>
+<div id="january-19-tutorial" class="section level2">
+<h2>January 19 Tutorial</h2>
+<p><a href="week2/Week2PracticeProblems-student.html">Practice problems</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+<p><a href="week2/Week2PracticeProblems-NT.html">Example solutions to practice problems</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+</div>
+</div>
+<div id="week-3" class="section level1">
+<h1>Week 3</h1>
+<div id="january-22-class" class="section level2">
+<h2>January 22 Class</h2>
+<div id="slides-and-references-1" class="section level3">
+<h3>Slides and References</h3>
+<p><a href="week3/STA130_class3_nt.pdf">Class slides</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week3/lect4_sta130_nt.html">Class slides</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+<p><a href="https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week3/lect4_sta130_nt.Rmd">R Markdown source of slides</a> <i class="fa fa-github" aria-hidden="true"></i></a></p>
+<p><a href="week3/STA130_class3_10.pdf">Annotated slides - 10:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week3/STA130_class3_nt_2pm.pdf">Annotated slides - 14:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><i class="fa fa-book" aria-hidden="true"></i> 1. <a href="https://d1b10bmlvqabco.cloudfront.net/attach/ighbo26t3ua52t/igp9099yy4v10/igz7vp4w5su9/OReilly_HandsOn_Programming_with_R_2014.pdf">Hands on Programming With R. G. Grolemund - Chapters 1-5</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><i class="fa fa-book" aria-hidden="true"></i> 2. <a href="http://r4ds.had.co.nz/transform.html">R for Data Science. G. Grolemund and H. Wickham. Chapter 5</a> <i class="fa fa-external-link" aria-hidden="true"></i></p>
+</div>
+</div>
+<div id="january-26-tutorial" class="section level2">
+<h2>January 26 Tutorial</h2>
+<p><a href="week3/Week3PracticeProblems-student.html">Practice Problems</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+<p><a href="week3/Week3PracticeProblems-NT.html">Example solutions to practice problems</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+</div>
+</div>
+<div id="week-4" class="section level1">
+<h1>Week 4</h1>
+<div id="january-29-class" class="section level2">
+<h2>January 29 Class</h2>
+<div id="slides-and-references-2" class="section level3">
+<h3>Slides and References</h3>
+<p><a href="week4/STA130announcement_January29.pdf">Announcements</a></p>
+<p><a href="week4/Week4_Testing1.pdf">Class slides</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week4/Week4_Testing1.html">Class slides</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+<p><a href="https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week4/Week4_Testing1.Rmd">R Markdown source of slides</a> <i class="fa fa-github" aria-hidden="true"></i></a></p>
+<p><a href="week4/STA130_Week4_Testing1_am.pdf">Annotated slides - 10:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week4/STA130_Week4_Testing1_pm.pdf">Annotated slides - 14:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><i class="fa fa-book" aria-hidden="true"></i> <a href="https://www.openintro.org/stat/textbook.php?stat_book=isrs">Introductory Statistics with Randomization and Simulation - Sections 2.3.1, 2.3.2, 2.3.7 and 2.4</a> <i class="fa fa-external-link" aria-hidden="true"></i></p>
+</div>
+</div>
+<div id="february-2-tutorial" class="section level2">
+<h2>February 2 Tutorial</h2>
+<p><a href="week4/Week4PracticeProblems-student.html">Practice Problems</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+<p><a href="week4/Week4PracticeProblems-solutions.html">Example solutions to practice problems</a> <i class="fa fa-html5" aria-hidden="true"></i> <br>Typo in solution to Question 2 corrected on March 1. It used to say the test statistic is 0.38 in one spot, but the test statistic is 0.17, as used elsewhere else in the solution.</p>
+</div>
+</div>
+<div id="week-5" class="section level1">
+<h1>Week 5</h1>
+<div id="february-5-class" class="section level2">
+<h2>February 5 Class</h2>
+<div id="slides-and-references-3" class="section level3">
+<h3>Slides and References</h3>
+<p><strong>Note:</strong> A new version of the unannotated slides was posted February 8 (both html and pdf). This version corrects a few typos noted in class plus a typo on pages 58 and 59 (in the mathematical note that you’re not responsible for).</p>
+<p><a href="week5/Week5_Testing2.pdf">Class slides</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week5/Week5_Testing2.html">Class slides</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+<p><a href="https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week5/Week5_Testing2.Rmd">R Markdown source of slides</a> <i class="fa fa-github" aria-hidden="true"></i></a></p>
+<p><a href="week5/Week5_Testing2_am.pdf">Annotated slides - 10:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week5/Week5_Testing2_pm.pdf">Annotated slides - 14:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><i class="fa fa-book" aria-hidden="true"></i> <a href="https://www.openintro.org/stat/textbook.php?stat_book=isrs">Introductory Statistics with Randomization and Simulation - Sections 2.1, 2.2, 2.3 (excluding 2.3.4)</a> <i class="fa fa-external-link" aria-hidden="true"></i></p>
+</div>
+</div>
+<div id="february-9-tutorial" class="section level2">
+<h2>February 9 Tutorial</h2>
+<p><a href="week5/Week5PracticeProblems-student.html">Practice Problems</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+<p><a href="week5/Week5PracticeProblems-solutions.html">Example solutions to practice problems</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+</div>
+</div>
+<div id="week-6" class="section level1">
+<h1>Week 6</h1>
+<div id="february-12-class" class="section level2">
+<h2>February 12 Class</h2>
+<div id="slides-and-references-4" class="section level3">
+<h3>Slides and References</h3>
+<p><a href="week6/Week6_CIs.pdf">Class slides</a> (Watch for the typo on slide 46!) <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week6/Week6_CIs.html">Class slides</a> (Watch for the typo on slide 46!) <i class="fa fa-html5" aria-hidden="true"></i></p>
+<p><a href="https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week6/Week6_CIs.Rmd">R Markdown source of slides</a> <i class="fa fa-github" aria-hidden="true"></i></a></p>
+<p><a href="week6/Mental_Health_Project_Recruitment.pdf">Announcement about Mental Health Project</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week6/Week6_CIs_am_annotated.pdf">Annotated slides - 10:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week6/Week6_CIs_pm_annotated.pdf">Annotated slides - 14:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><i class="fa fa-book" aria-hidden="true"></i> Modern Data Science with R: 7.1, 7.2, 7.3</p>
+</div>
+</div>
+<div id="february-16-tutorial" class="section level2">
+<h2>February 16 Tutorial</h2>
+<p><a href="week6/Week6PracticeProblems-student.html">Practice Problems</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+<p><a href="week6/Week6PracticeProblems-solutions.html">Example solutions to practice problems</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+</div>
+</div>
+<div id="week-7" class="section level1">
+<h1>Week 7</h1>
+<div id="february-26-class" class="section level2">
+<h2>February 26 Class</h2>
+<div id="slides" class="section level3">
+<h3>Slides</h3>
+<p><a href="week7/SSU_Career_Panel_2018.png">Announcement: Statistical Sciences Career Panel, Saturday March 3</a></p>
+<p><a href="week7/test_review.pdf">Class slides</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week7/sta130_test_review.html">Class slides</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+<p><a href="https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week7/sta130_test_review.Rmd">R Markdown source of slides</a> <i class="fa fa-github" aria-hidden="true"></i></a></p>
+<p><a href="week7/test_review_annotated_am.pdf">Annotated slides - 10:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week7/test_review_annotated_pm.pdf">Annotated slides - 14:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week7/sta130_test_review_solutions.html">Example solutions to test review</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+</div>
+</div>
+</div>
+<div id="week-8" class="section level1">
+<h1>Week 8</h1>
+<div id="march-8-class" class="section level2">
+<h2>March 8 Class</h2>
+<div id="slides-and-references-5" class="section level3">
+<h3>Slides and References</h3>
+<p><a href="week8/Class8_ClassificationTrees1.pdf">Class slides</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week8/Class8_sta130_nt_ver1.html">Class slides</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+<p><a href="https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week8/Class8_sta130_nt_ver1.Rmd">R Markdown source of slides</a> <i class="fa fa-github" aria-hidden="true"></i></a></p>
+<p><a href="week8/Week8_ClassificationTrees_10.pdf">Annotated slides - 10:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week8/Class8_ClassificationTrees1_2.pdf">Annotated slides - 14:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><i class="fa fa-book" aria-hidden="true"></i> Modern Data Science with R: 8.1, 8.2, 8.4</p>
+</div>
+</div>
+<div id="march-9-tutorial" class="section level2">
+<h2>March 9 Tutorial</h2>
+<p><a href="week8/Week8PracticeProblems-student1.html">Practice Problems</a></p>
+<p><a href="week8/Week8PracticeProblems-solutions1.html">Example solutions to practice problems</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+</div>
+</div>
+<div id="week-9" class="section level1">
+<h1>Week 9</h1>
+<div id="march-12-class" class="section level2">
+<h2>March 12 Class</h2>
+<div id="slides-and-references-6" class="section level3">
+<h3>Slides and References</h3>
+<p><a href="week9/sta130_lecture9.pdf">Class slides</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week9/sta130_lecture9.html">Class slides</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+<p><a href="week9/sta130_lecture9_10.pdf">Annotated slides - 10:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week9/sta130_lecture9_2.pdf">Annotated slides - 14:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week9/sta130_lecture9.Rmd">R Markdown source of slides</a> <i class="fa fa-github" aria-hidden="true"></i></a></p>
+<p><i class="fa fa-book" aria-hidden="true"></i> Modern Data Science with R: page 189, page 465 - 468, page 470.</p>
+<p>Geotab Data Scientist Brenda Nguyen’s <a href="https://www.youtube.com/embed/zWKm22p201U">presentation</a> on Hazardous Driving Data</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zWKm22p201U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+</div>
+</div>
+<div id="march-16-tutorial" class="section level2">
+<h2>March 16 Tutorial</h2>
+<p><a href="week9/Week9PracticeProblems-student.html">Practice Problems</a></p>
+<p><a href="week9/Week9PracticeProblems-solutions.html">Example solutions to practice problems</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+</div>
+</div>
+<div id="week-10" class="section level1">
+<h1>Week 10</h1>
+<div id="march-19-class" class="section level2">
+<h2>March 19 Class</h2>
+<div id="slides-and-references-7" class="section level3">
+<h3>Slides and References</h3>
+<p><a href="week10/Week10_Regression2.pdf">Class slides</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week10/Week10_Regression2.html">Class slides</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+<p><a href="week10/Week10_Regression2_am_annotated.pdf">Annotated slides - 10:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week10/Week10_Regression2_pm_annotated.pdf">Annotated slides - 14:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="https://raw.githubusercontent.com/ntaback/UofT_STA130/master/week10/Week10_Regression2.Rmd">R Markdown source of slides</a> <i class="fa fa-github" aria-hidden="true"></i></a></p>
+<p><i class="fa fa-book" aria-hidden="true"></i>Section 7.6 of <em>Modern Data Science with R</em><br />
+Section 1.4.1 of <a href="https://www.openintro.org/stat/textbook.php?stat_book=isrs"><em>Introductory Statistics with Randomization and Simulation</em> from OpenIntro</a></p>
+</div>
+</div>
+<div id="march-23-tutorial" class="section level2">
+<h2>March 23 Tutorial</h2>
+<p><a href="week10/Week10PracticeProblems-student.html">Practice Problems</a></p>
+<p><a href="week10/Week10PracticeProblems-solutions.html">Example solutions to practice problems</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+</div>
+</div>
+<div id="week-11" class="section level1">
+<h1>Week 11</h1>
+<div id="march-26-class" class="section level2">
+<h2>March 26 Class</h2>
+<p><a href="week11/sta130_lecture11_beam_10.pdf">Annotated slides - 10:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week11/sta130_lecture11_beam_2.pdf">Annotated slides - 14:00 class</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week11/sta130_lecture11_beam.pdf">Class slides</a> <i class="fa fa-file-pdf-o" aria-hidden="true"></i></p>
+<p><a href="week11/sta130_lecture11.html">Class slides</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+<p><i class="fa fa-book" aria-hidden="true"></i> Modern Data Science with R: Chapter 6.</p>
+<div id="slides-and-references-8" class="section level3">
+<h3>Slides and References</h3>
+</div>
+</div>
+<div id="april-30---no-tutorial-university-closed-on-good-friday" class="section level2">
+<h2>April 30 - No Tutorial ( University Closed on Good Friday)</h2>
+<p><a href="week11/Week11PracticeProblems-student.html">Practice Problems</a></p>
+<p><a href="week11/Week11PracticeProblems-solutions.html">Example solutions to practice problems</a> <i class="fa fa-html5" aria-hidden="true"></i></p>
+</div>
+</div>
+<div id="week-12" class="section level1">
+<h1>Week 12</h1>
+<div id="april-2-sta130-poster-fair" class="section level2">
+<h2>April 2 STA130 Poster Fair</h2>
+<p><a href="project_info.html">Project Information</a></p>
+</div>
+</div>
+<div id="tutorial-content" class="section level1">
+<h1>Tutorial Content</h1>
+<p>Documents created by TAs for tutorials can be found <a href="https://drive.google.com/open?id=1ip3MLIWDOe-pKs2Qs4FBzhbSoNcbhRiY">here</a>.</p>
+<p><a href="https://raw.githubusercontent.com/ntaback/UofT_STA130/master/course_content.Rmd">R Markdown source</a> <i class="fa fa-github fa-2x" aria-hidden="true"></i></p>
+</div>
 
 <p>Copyright &copy; 2021 by Tahir Muhammad, Inc. All rights reserved.</p>
 
 
+</div>
+</div>
 
 </div>
 
@@ -377,6 +718,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

@@ -1,17 +1,30 @@
 ---
-title: "STA107: Introducton to Probability"
+title: "Introduction to Probablity"
+date: "Winter 2021" 
 output: 
   html_document:
+   toc: true
+   toc_depth: 5
+   toc_float: true 
    theme: flatly
 ---
 
-Why I am awesome. 
+## <i class="fa fa-clock-o" aria-hidden="true"></i> Introductions
+
+Hello and Welcome! <br>
+My name is Tahir Muhammad, and I am your TA for STA107 this semester. I will be mainly using this site to present your relevant weekly tutorials, and end off with additional resources / practice problems in order to help you succeed in this course. If you have any suggestions, recommendations, or any form of feedback which you would like me to know, please use the Feedback Form in top right corner to let me know (Anonymous options aswell!)
+
+- <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Tahir Muhammad, Tahir.muhammad@mail.utoronto.ca 
+
+- Tutorial Times are Friday 2-3 PM, and Office hours are on Wednesday 6-7 PM <br>
+You can find all of the Teaching Assistant tutorials, and office hours at
+[www.Quercus/STA107/TAs.com](https://q.utoronto.ca/courses/212245/pages/zoom-links-to-tutorials-and-ta-office-hours?module_item_id=2195690)
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+# Week 1
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
@@ -30,3 +43,10 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Including Plots 2
+
+ahahdas
+
+## Including Plots 3
+
+ashda

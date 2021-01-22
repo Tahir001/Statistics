@@ -1,0 +1,13 @@
+---
+title: "Machine Learning"
+author: "Tahir M"
+date: "02/01/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(reticulate)
+```
+
+## R Markdown
