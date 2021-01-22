@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Probablity"
+title: "An Introduction to Probability and Modelling"
 date: "Winter 2021" 
 output: 
   html_document:
@@ -9,7 +9,7 @@ output:
    theme: flatly
 ---
 
-## <i class="fa fa-clock-o" aria-hidden="true"></i> Introductions
+# <i class="fa fa-clock-o" aria-hidden="true"></i> Introductions
 
 Hello and Welcome! <br>
 My name is Tahir Muhammad, and I am your TA for STA107 this semester. I will be mainly using this site to present your relevant weekly tutorials, and end off with additional resources / practice problems in order to help you succeed in this course. If you have any suggestions, recommendations, or any form of feedback which you would like me to know, please use the Feedback Form in top right corner to let me know (Anonymous options aswell!)
