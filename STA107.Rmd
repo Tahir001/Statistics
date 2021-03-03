@@ -9,15 +9,13 @@ output:
    theme: flatly
 ---
 
-# <i class="fa fa-clock-o" aria-hidden="true"></i> Introductions
-
 Hello and Welcome! <br>
 My name is Tahir Muhammad, and I am your TA for STA107 this semester. I will be mainly using this site to present your relevant weekly tutorials, and end off with additional resources / practice problems in order to help you succeed in this course. If you have any suggestions, recommendations, or any form of feedback which you would like me to know, please use the Feedback Form in top right corner to let me know (Anonymous options aswell!)
 
 - <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Tahir Muhammad, Tahir.muhammad@mail.utoronto.ca 
 
 - Tutorial Times are Friday 2-3 PM, and Office hours are on Wednesday 6-7 PM <br>
-You can find all of the Teaching Assistant tutorials, and office hours at
+You can find all of the Teaching Assistant tutorials, and office hours information at
 [www.Quercus/STA107/TAs.com](https://q.utoronto.ca/courses/212245/pages/zoom-links-to-tutorials-and-ta-office-hours?module_item_id=2195690)
 
 ```{r setup, include=FALSE}
@@ -26,9 +24,21 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Week 1
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+## Agenda for today:
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+- Introductions 
+- Vocabulary Review
+- R basics 
+
+## Introductions
+
+Ice Breakers -- Your name, Program of study, one thing that you absolutely love / or one thing that you absolutely hate about quarantine
+
+## Vocabulary Review
+
+## R basics
+
+The plan today is to cover lots of R basics, so you can see what R is capable of and learn these concepts on your own. 
 
 ```{r cars}
 summary(cars)
