@@ -36,27 +36,98 @@ Ice Breakers -- Your name, Program of study, one thing that you absolutely love 
 
 ## Vocabulary Review
 
-## R basics
+The goal of this section is to list all topics covered in this weeks lecture, and then go through the ones students feel they need more clarification on. 
 
-The plan today is to cover lots of R basics, so you can see what R is capable of and learn these concepts on your own. 
+- Population
+- Experimental / Observational Unit
+- Sample 
+- Statistic
+- Statistical Inference
 
-```{r cars}
-summary(cars)
+## R basics - Part I
+
+The plan today is to cover lots of R basics, so you can see what R is capable of and learn these concepts on your own. In this section, we will cover reading data into R, using R console as a Calculator, Variables, Comments, Vectors, and different types of data frames in R.
+
+### Using R as a Calculator
+
+We can preform basic mathematic operations in R, just like you would on any normal calculator. <br> Note that the hashtag symbol (#) is a comment and anything after that line in R is not read in as code. 
+
+```{r, include = TRUE}
+# Addition 
+3+3
+# Subtraction
+219-9
+# Multiplication
+50*2
+# Division
+1000/2
+# Exponents
+10^2
+# Order of Operations still applies here
+(2+2)*4
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r, include = TRUE}
+# Special numbers
+pi
+exp(1)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-## Including Plots 2
+### Variables
 
-ahahdas
+We can also store these results using an assignment operator into a variable, and use those variables going further. 
 
-## Including Plots 3
+```{r, include = TRUE}
+# Assignment Operator is the = sign, or <- 
+# Statisticians usually use <- for naming variables
+x <- 2+2
+x
+y <- 10
+x*y
 
-ashda
+# We can also name our variables, use them as necessary
+my_name <- "Tahir"
+cat("Hi, nice to meet you all! -", my_name)
+```
+
+### Data Types
+
+There are different types of data in R. <br>
+The ones we have seen above are integer, double (numbers with decimals), and char (defined by quotations).<br> Below is a table with some examples of each data type.<br>
+
+![Different Data Types in R](images/Week1/Datatypes.png)
+\vspace{12pt}<br>
+
+We can check the certain types of our variables using the is.<data type> command, where datatype is replaced by one of the data types mentioned above. See some examples below. 
+
+```{r, include=TRUE}
+name <- "Tahir"
+is.integer(name)
+is.character(name)
+```
+
+# Week 2
+
+### Vectors
+
+Vectors are one of the most simplest data structures in R. <br>
+You can make an vector by grouping some values of the same data type together with c(), which combines the single elements into a vector. <br>
+
+```{r, include=TRUE, eval=FALSE}
+# Basic vector operation
+x <- c(1,4,6,-8,5)
+# Adding an element to a vector
+x+y
+# Multiplying by a scalar to vector y
+x*y
+
+# Methods on vectors
+mean(x)
+var(x)
+sd(x)
+var(x)
+median(x)
+sum(x)
+prod(x) 
+```
+

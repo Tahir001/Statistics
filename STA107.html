@@ -441,29 +441,94 @@ div.tocify {
 </div>
 <div id="vocabulary-review" class="section level2">
 <h2>Vocabulary Review</h2>
+<p>The goal of this section is to list all topics covered in this weeks lecture, and then go through the ones students feel they need more clarification on.</p>
+<ul>
+<li>Population</li>
+<li>Experimental / Observational Unit</li>
+<li>Sample</li>
+<li>Statistic</li>
+<li>Statistical Inference</li>
+</ul>
 </div>
-<div id="r-basics" class="section level2">
-<h2>R basics</h2>
-<p>The plan today is to cover lots of R basics, so you can see what R is capable of and learn these concepts on your own.</p>
-<pre class="r"><code>summary(cars)</code></pre>
-<pre><code>##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00</code></pre>
+<div id="r-basics---part-i" class="section level2">
+<h2>R basics - Part I</h2>
+<p>The plan today is to cover lots of R basics, so you can see what R is capable of and learn these concepts on your own. In this section, we will cover reading data into R, using R console as a Calculator, Variables, Comments, Vectors, and different types of data frames in R.</p>
+<div id="using-r-as-a-calculator" class="section level3">
+<h3>Using R as a Calculator</h3>
+<p>We can preform basic mathematic operations in R, just like you would on any normal calculator. <br> Note that the hashtag symbol (#) is a comment and anything after that line in R is not read in as code.</p>
+<pre class="r"><code># Addition 
+3+3</code></pre>
+<pre><code>## [1] 6</code></pre>
+<pre class="r"><code># Subtraction
+219-9</code></pre>
+<pre><code>## [1] 210</code></pre>
+<pre class="r"><code># Multiplication
+50*2</code></pre>
+<pre><code>## [1] 100</code></pre>
+<pre class="r"><code># Division
+1000/2</code></pre>
+<pre><code>## [1] 500</code></pre>
+<pre class="r"><code># Exponents
+10^2</code></pre>
+<pre><code>## [1] 100</code></pre>
+<pre class="r"><code># Order of Operations still applies here
+(2+2)*4</code></pre>
+<pre><code>## [1] 16</code></pre>
+<pre class="r"><code># Special numbers
+pi</code></pre>
+<pre><code>## [1] 3.141593</code></pre>
+<pre class="r"><code>exp(1)</code></pre>
+<pre><code>## [1] 2.718282</code></pre>
 </div>
-<div id="including-plots" class="section level2">
-<h2>Including Plots</h2>
-<p>You can also embed plots, for example:</p>
-<p><img src="STA107_files/figure-html/pressure-1.png" width="672" /></p>
-<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot. ## Including Plots 2</p>
-<p>ahahdas</p>
+<div id="variables" class="section level3">
+<h3>Variables</h3>
+<p>We can also store these results using an assignment operator into a variable, and use those variables going further.</p>
+<pre class="r"><code># Assignment Operator is the = sign, or &lt;- 
+# Statisticians usually use &lt;- for naming variables
+x &lt;- 2+2
+x</code></pre>
+<pre><code>## [1] 4</code></pre>
+<pre class="r"><code>y &lt;- 10
+x*y</code></pre>
+<pre><code>## [1] 40</code></pre>
+<pre class="r"><code># We can also name our variables, use them as necessary
+my_name &lt;- &quot;Tahir&quot;
+cat(&quot;Hi, nice to meet you all! -&quot;, my_name)</code></pre>
+<pre><code>## Hi, nice to meet you all! - Tahir</code></pre>
 </div>
-<div id="including-plots-3" class="section level2">
-<h2>Including Plots 3</h2>
-<p>ashda</p>
+<div id="data-types" class="section level3">
+<h3>Data Types</h3>
+<p>There are different types of data in R. <br> The ones we have seen above are integer, double (numbers with decimals), and char (defined by quotations).<br> Below is a table with some examples of each data type.<br></p>
+<p><img src="images/Week1/Datatypes.png" alt="Different Data Types in R" /> <br></p>
+<p>We can check the certain types of our variables using the is.<data type> command, where datatype is replaced by one of the data types mentioned above. See some examples below.</p>
+<pre class="r"><code>name &lt;- &quot;Tahir&quot;
+is.integer(name)</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<pre class="r"><code>is.character(name)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+</div>
+</div>
+</div>
+<div id="week-2" class="section level1">
+<h1>Week 2</h1>
+<div id="vectors" class="section level3">
+<h3>Vectors</h3>
+<p>Vectors are one of the most simplest data structures in R. <br> You can make an vector by grouping some values of the same data type together with c(), which combines the single elements into a vector. <br></p>
+<pre class="r"><code># Basic vector operation
+x &lt;- c(1,4,6,-8,5)
+# Adding an element to a vector
+x+y
+# Multiplying by a scalar to vector y
+x*y
+
+# Methods on vectors
+mean(x)
+var(x)
+sd(x)
+var(x)
+median(x)
+sum(x)
+prod(x) </code></pre>
 </div>
 </div>
 
