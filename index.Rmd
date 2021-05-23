@@ -1,5 +1,5 @@
 ---
-title: "UofT Statistics"
+title: "Teaching and Education"
 output: 
   html_document:
    theme: flatly
@@ -9,6 +9,25 @@ knitr::opts_chunk$set(cache = TRUE)
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ```
 
+<br>
+Hello and Welcome! <br>
+My name is Tahir Muhammad and I am a Teaching Assisstant at University of Toronto. The following website contains the contents which I use to teach my students, and some additional resources. Please feel free to have a look around, and if you have any inquiries, questions or suggestions -- please don't hesitate to let me know.  
+
+### My Teaching Philosophy in a Nutshell
+
+I strongly believe in the plastic neurology of the human brain especially in younger audience, who are able to learn and grasp anything with consistent effort. In order to bring the best out of my students in the fields of statistics, computer science, mathematics and data science, I try to convey my enthusiasm in my lessons and show how these domains are impacting the world around us everyday. By teaching content that is engaging and focusing on the how and why we do things in this manner rather than just memorizing how to solve an equation or code a problem empowers the students to be critical thinkers. Striking a balance between the big picture, the underlying mathematical concepts and the practical implementation is crucial for a learners journey in these domains, and I try to do just that for my students. 
+
+### Teaching Experience (University of Toronto)
+
+#### Statistics
+
+- STA107 - Probability and Reasoning
+- STA130 - Statistical Reasoning and Data Science 
+- STA237 - Data Analysis I 
+- STA238 - Data Analysis II
+- STAC67 - Regression Analysis 
+
+### Cool things
 __Look at how cool this plot is!__
 
 $$Y = \alpha \cdot \sin(X), \alpha = 0,0.1,0.2,...,3$$
