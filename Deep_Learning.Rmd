@@ -1,0 +1,12 @@
+---
+title: "Deep_Learning"
+author: "Tahir M"
+date: "27/05/2021"
+output: html_document
+---
+
+Hello and Welcome. 
+In the following course, I will be sharing my knowledge for beginners on the deep learning topics. 
+Please feel free to stick around and learn, and ask questions for clarity as needed. 
+
+

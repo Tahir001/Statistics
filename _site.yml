@@ -10,7 +10,7 @@ navbar:
     - text: "STA130"
       href: STA130.html
     - text: "CSC108"
-      href: python.ipynb
+      href: MachineLearning.Rmd
       menu:
         - text: Classes
           href: class_docs.html
