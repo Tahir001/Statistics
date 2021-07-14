@@ -423,7 +423,7 @@ div.tocify {
 </div>
 
 
-<p>Hello and Welcome! <br> My name is Tahir Muhammad, and I am your TA for STA107 this semester. I will be mainly using this site to present your relevant weekly tutorials, and end off with additional resources / practice problems in order to help you succeed in this course. If you have any suggestions, recommendations, or any form of feedback which you would like me to know, please use the Feedback Form in top right corner to let me know (Anonymous options as well)</p>
+<p>Hello and Welcome! <br> My name is Tahir Muhammad, and I am your TA for STA302 this summer. I will be mainly using this site to present your relevant weekly tutorials, and end off with additional resources / practice problems in order to help you succeed in this course. If you have any suggestions, recommendations, or any form of feedback which you would like me to know, please use the Feedback Form in top right corner to let me know (Anonymous options as well)</p>
 <ul>
 <li><p><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Tahir Muhammad, <a href="mailto:Tahir.muhammad@mail.utoronto.ca" class="email">Tahir.muhammad@mail.utoronto.ca</a></p></li>
 <li><p>Tutorial Times are Friday 2-3 PM, and Office hours are on Wednesday 6-7 PM <br> You can find all of the Teaching Assistant tutorials, and office hours information at <a href="https://q.utoronto.ca/courses/212245/pages/zoom-links-to-tutorials-and-ta-office-hours?module_item_id=2195690">www.Quercus/STA107/TAs.com</a></p></li>
@@ -434,16 +434,65 @@ div.tocify {
 <h2>Agenda for today:</h2>
 <ul>
 <li>Introductions</li>
-<li>Vocabulary Review</li>
-<li>R basics</li>
+<li>Relations between Variables</li>
+<li>Correlation = Causation ?</li>
+<li>Linear Regression</li>
+<li>Gauss Markov Assumptions</li>
 </ul>
 </div>
 <div id="introductions" class="section level2">
 <h2>Introductions</h2>
-<p>Ice Breakers – Your name, Program of study, one thing that you absolutely love / or one thing that you absolutely hate about quarantine</p>
+<p>Ice Breakers – Your name, Program of study, What is the one thing that you are looking forward to about covid-19 restrictions being lifted? What is the thing you are currently dreading about it?</p>
 </div>
-<div id="vocabulary-review" class="section level2">
-<h2>Vocabulary Review</h2>
+<div id="relations-between-variables" class="section level2">
+<h2>Relations between variables</h2>
+<div id="functional-relationships" class="section level3">
+<h3>Functional Relationships</h3>
+<p>We can think of functional relationships as the highest law on how two variables behave. Suppose <span class="math display">\[ Y = f(X) \]</span> where <span class="math inline">\(X\)</span> is the independent variable and <span class="math inline">\(Y\)</span> is the dependent variable. The function <span class="math inline">\(f\)</span> here denotes the relation between the two variables. Lets consider the relation between dollar sales <span class="math inline">\((Y)\)</span> of a product sold at a fixed price and number of units sold <span class="math inline">\((X)\)</span>. If the selling price is <span class="math inline">\(\$2\)</span> per unit, the relation is expressed by the equation:</p>
+<p><span class="math display">\[ Y = 2X \]</span></p>
+<p>This is an example of functional relationship, as there is no uncertainty involved. You give an input, and always have an output. Lets look at a graph of this example to better understand what we mean.</p>
+<pre class="r"><code>library(tidyverse)
+
+# Generate some constants for X and Y
+X=c(75, 25, 130)
+Y=c(150, 50, 260)
+
+# pass that into a data frame object
+data&lt;-data.frame(X, Y)
+
+# Use ggplot to plot our X and Y
+ggplot(data,aes(x=X, y=Y))+geom_point()+
+  geom_smooth(method=&#39;lm&#39;,col=&quot;red&quot;, formula=y~x)</code></pre>
+<p><img src="STA302_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>Note that all observations lie on the line of a functional relationship, i.e the relationship is 1 to 1.</p>
+</div>
+<div id="statistical-relationships" class="section level3">
+<h3>Statistical Relationships</h3>
+<p>A statistical relationship is a relationship between two or more variables where not all points fall on the line, and the relationship is not 1-1. A statistical relationship contains some form of randomness which is denoted by <span class="math inline">\(\epsilon\)</span> and associates with the statistical model.</p>
+<p>Suppose Performance evaluations for 10 employees were obtained at midyear and at year-end are defined as:</p>
+<p><span class="math display">\[ Y = \beta X + \epsilon \]</span> Note that this model encompasses of both a functional and statistical relationship</p>
+<p><span class="math display">\[ Y = \underbrace{\beta X}_\text{Functional component} + \underbrace{\epsilon}_\text{Statistical component} \]</span></p>
+<p>We should also note that there are two characteristics of a statistical relationship:</p>
+<ul>
+<li>Tendency of Y to vary with X (direction)</li>
+<li>Random scatter around this tendency (strength)</li>
+</ul>
+</div>
+<div id="correlation-vs-causation" class="section level3">
+<h3>Correlation VS Causation</h3>
+<p>Correlation <em>does not</em> mean Causation</p>
+<p>In regression analysis, we are only looking at the association, or co-relation of the independent and dependent variables. This does not imply causation of Y due to X. To actually build causation models, is a very niche topic and one that is still developing and being worked on to this day. (Hint: It is not easy to detect causation)</p>
+<p>Here is a funny little chart which illustrates how correlation doesn’t mean causation.</p>
+<center>
+<div class="figure">
+<img src="images/CausationVSCorrelation.png" alt="" />
+<p class="caption">Causation &amp; Correlation</p>
+</div>
+</center>
+</div>
+</div>
+<div id="section" class="section level2">
+<h2></h2>
 <p>The goal of this section is to list all topics covered in this weeks lecture, and then go through the ones students feel they need more clarification on.</p>
 <ul>
 <li>Population</li>

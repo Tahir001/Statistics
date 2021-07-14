@@ -9,8 +9,9 @@ navbar:
       href: STA107.html
     - text: "STA130"
       href: STA130.html
+    - text: "STA302"
+      href: STA302.html
     - text: "CSC108"
-      href: MachineLearning.Rmd
       menu:
         - text: Classes
           href: class_docs.html
@@ -24,7 +25,7 @@ navbar:
           href: assign_docs.html
         - text: Assignment Grading
           href: assignment_rubrics.html
-    - text: Machine Learning
+    - text: "Machine Learning"
       href: Machine Learning.Rmd
     - text: Discussion Forum
       href: XXXXXTO-UPDATEXXX

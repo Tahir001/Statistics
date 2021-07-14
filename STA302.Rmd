@@ -1,0 +1,197 @@
+---
+title: "An Introduction to Probability and Modelling"
+date: "Winter 2021" 
+output: 
+  html_document:
+   toc: true
+   toc_depth: 5
+   toc_float: true 
+   theme: flatly
+---
+
+Hello and Welcome! <br>
+My name is Tahir Muhammad, and I am your TA for STA302 this summer. I will be mainly using this site to present your relevant weekly tutorials, and end off with additional resources / practice problems in order to help you succeed in this course. If you have any suggestions, recommendations, or any form of feedback which you would like me to know, please use the Feedback Form in top right corner to let me know (Anonymous options as well)
+
+- <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Tahir Muhammad, Tahir.muhammad@mail.utoronto.ca 
+
+- Tutorial Times are Friday 2-3 PM, and Office hours are on Wednesday 6-7 PM <br>
+You can find all of the Teaching Assistant tutorials, and office hours information at
+[www.Quercus/STA107/TAs.com](https://q.utoronto.ca/courses/212245/pages/zoom-links-to-tutorials-and-ta-office-hours?module_item_id=2195690)
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Week 1
+
+## Agenda for today:
+
+- Introductions 
+- Relations between Variables
+- Correlation = Causation ?
+- Linear Regression
+- Gauss Markov Assumptions
+
+## Introductions
+
+Ice Breakers -- Your name, Program of study, What is the one thing that you are looking forward to about covid-19 restrictions being lifted? What is the thing you are currently dreading about it?
+
+## Relations between variables
+
+### Functional Relationships
+
+We can think of functional relationships as the highest law on how two variables behave. Suppose $$ Y = f(X) $$ where $X$ is the independent variable and $Y$ is the dependent variable. The function $f$ here denotes the relation between the two variables. Lets consider the relation between dollar sales $(Y)$ of a product sold at a fixed price and number of units sold $(X)$. If the selling price is $\$2$ per unit, the relation is expressed by the equation:
+
+$$ Y = 2X $$ 
+
+This is an example of functional relationship, as there is no uncertainty involved. You give an input, and always have an output. Lets look at a graph of this example to better understand what we mean. 
+
+```{r, include=FALSE, message=FALSE}
+library(tidyverse)
+```
+
+```{r, include=TRUE}
+library(tidyverse)
+
+# Generate some constants for X and Y
+X=c(75, 25, 130)
+Y=c(150, 50, 260)
+
+# pass that into a data frame object
+data<-data.frame(X, Y)
+
+# Use ggplot to plot our X and Y
+ggplot(data,aes(x=X, y=Y))+geom_point()+
+  geom_smooth(method='lm',col="red", formula=y~x)
+
+```
+
+Note that all observations lie on the line of a functional relationship, i.e the relationship is 1 to 1. 
+
+### Statistical Relationships
+
+A statistical relationship is a relationship between two or more variables where not all points fall on the line, and the relationship is not 1-1. A statistical relationship contains some form of randomness which is denoted by $\epsilon$ and associates with the statistical model. 
+
+Suppose Performance evaluations for 10 employees were obtained at midyear and at year-end are defined as: 
+
+$$ Y = \beta X + \epsilon $$
+Note that this model encompasses of both a functional and statistical relationship
+
+
+$$ Y = \underbrace{\beta X}_\text{Functional component} + \underbrace{\epsilon}_\text{Statistical component} $$ 
+
+We should also note that there are two characteristics of a statistical relationship: 
+
+- Tendency of Y to vary with X (direction)
+- Random scatter around this tendency (strength)
+
+### Correlation VS Causation
+
+Correlation *does not* mean Causation
+
+In regression analysis, we are only looking at the association, or co-relation of the independent and dependent variables. This does not imply causation of Y due to X. To actually build causation models, is a very niche topic and one that is still developing and being worked on to this day. (Hint: It is not easy to detect causation)
+
+Here is a funny little chart which illustrates how correlation doesn't mean causation. 
+
+<center>
+
+![Causation & Correlation](/home/tahir/Desktop/Statistics/images/CausationVSCorrelation.png)
+
+</center>
+## 
+
+The goal of this section is to list all topics covered in this weeks lecture, and then go through the ones students feel they need more clarification on. 
+
+- Population
+- Experimental / Observational Unit
+- Sample 
+- Statistic
+- Statistical Inference
+
+## R basics - Part I
+
+The plan today is to cover lots of R basics, so you can see what R is capable of and learn these concepts on your own. In this section, we will cover reading data into R, using R console as a Calculator, Variables, Comments, Vectors, and different types of data frames in R.
+
+### Using R as a Calculator
+
+We can preform basic mathematic operations in R, just like you would on any normal calculator. <br> Note that the hashtag symbol (#) is a comment and anything after that line in R is not read in as code. 
+
+```{r, include = TRUE}
+# Addition 
+3+3
+# Subtraction
+219-9
+# Multiplication
+50*2
+# Division
+1000/2
+# Exponents
+10^2
+# Order of Operations still applies here
+(2+2)*4
+```
+
+```{r, include = TRUE}
+# Special numbers
+pi
+exp(1)
+```
+
+### Variables
+
+We can also store these results using an assignment operator into a variable, and use those variables going further. 
+
+```{r, include = TRUE}
+# Assignment Operator is the = sign, or <- 
+# Statisticians usually use <- for naming variables
+x <- 2+2
+x
+y <- 10
+x*y
+
+# We can also name our variables, use them as necessary
+my_name <- "Tahir"
+cat("Hi, nice to meet you all! -", my_name)
+```
+
+### Data Types
+
+There are different types of data in R. <br>
+The ones we have seen above are integer, double (numbers with decimals), and char (defined by quotations).<br> Below is a table with some examples of each data type.<br>
+
+![Different Data Types in R](images/Week1/Datatypes.png)
+\vspace{12pt}<br>
+
+We can check the certain types of our variables using the is.<data type> command, where datatype is replaced by one of the data types mentioned above. See some examples below. 
+
+```{r, include=TRUE}
+name <- "Tahir"
+is.integer(name)
+is.character(name)
+```
+
+# Week 2
+
+### Vectors
+
+Vectors are one of the most simplest data structures in R. <br>
+You can make an vector by grouping some values of the same data type together with c(), which combines the single elements into a vector. <br>
+
+```{r, include=TRUE, eval=FALSE}
+# Basic vector operation
+x <- c(1,4,6,-8,5)
+# Adding an element to a vector
+x+y
+# Multiplying by a scalar to vector y
+x*y
+
+# Methods on vectors
+mean(x)
+var(x)
+sd(x)
+var(x)
+median(x)
+sum(x)
+prod(x) 
+```
+

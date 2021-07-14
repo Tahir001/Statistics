@@ -25,7 +25,7 @@ I strongly believe in the ability of the the human brain to learn and grasp anyt
 - STA130 - Statistical Reasoning and Data Science 
 - STA237 - Data Analysis I 
 - STA238 - Data Analysis II
-- STAC67/STA2002 - Regression Analysis
+- STA302/STA2002 - Regression Analysis
 
 ### Cool things
 __Look at how cool this plot is!__
